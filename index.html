@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="favicon.png" >
+</head>
+
+<body onload="RQuote();">
+
+<div id='stars'></div>
+<div id='stars2'></div>
+<div id='stars3'></div>
+<div id='title'>
+
+</div>
+
+<div id='instructions'> Reload page for inspirational, celestial guidance. </div>
+
+<script type="text/javascript">
+
+var QAry=new Array('Seek to be worth knowing instead of well-known.','If you don&#39;t build your dreams, someone else will hire you to help build theirs.','If it was easy, everyone would do it.', "Love life and it will love you back.", 'Yay for awesome CSS animations!', 'Tension is who you think you should be. Relaxation is who you are.', 'If opportunity doesn&#39;t knock, build a door.');
+
+function RQuote(){
+ document.getElementById('title').innerHTML=QAry[Math.floor(Math.random()*QAry.length)];
+}
+</script>
+
+
+</body>
+
+</html>
